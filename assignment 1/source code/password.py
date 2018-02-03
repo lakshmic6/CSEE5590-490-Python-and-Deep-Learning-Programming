@@ -10,11 +10,11 @@ while True:
         continue
     #To check whether the entered string exceeds 16 characters
     elif len(password) > 16:
-        print("Length Exceeded: Password can have utmost 16 characters ")
+        print("characters exceeded: Password can have utmost 16 characters ")
         continue
     #To check if that the entered string should have at least one number
     elif not any(char.isdigit() for char in password):
-        print('the password should have at least one numeral')
+        print('the password should have at least one digit')
         continue
     #To check if the entered string should have at least one uppercase letter
     elif not any(char.isupper() for char in password):
