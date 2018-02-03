@@ -1,14 +1,14 @@
 #function to find the longest word and also printing the reverse of each word in the string,and finding mmiddle word of the sentence
 def stringoperations(stringlist,stringinput):
 
-    # operating the string to print the longest word
+ # operating the string to print the longest word
  # initializing an object to find the longest word
-    reqword = ''
+    requiredword = ''
 
     # searching for the longest word in whole list
     for word in stringlist:
 
-        # Comparing the lengths of every word among the set to find the longest one
+     # Comparing the lengths of every word among the set to find the longest one
         if len(word) > len(reqword):
             reqword = word
     print ('The longest word in the string is:', reqword)
@@ -19,7 +19,7 @@ def stringoperations(stringlist,stringinput):
     reversewords = [rev[::-1] for rev in stringlist]
 
     # Joining the reversed words into a sentence
-    revsentence = " ".join(reversewords)
+    reversesentence = " ".join(reversewords)
 
     # Printing the new sentence that is reversed
     print('The reversed sentence is:', revsentence)
