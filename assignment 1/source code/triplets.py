@@ -1,24 +1,24 @@
 # Program To Find Triplets that sum up to Zero From the given set of given integers
 def findTriplets( Array, size ):
     found = True
-    num1 = 0
-    num2 = 0
-    num3 = 0
+    number1 = 0
+    number2 = 0
+    number3 = 0
     for i in range(0, size-2):
 
         # for the first number a[i]
-        num1 = Array[i]
+        number1 = Array[i]
 
         for j in range( i+1, size-1 ):
 
             # for the second number a[j]
-            num2 = Array[j]
+            number2 = Array[j]
 
             for k in range( i+3, size ):
 
                 # for the third number a[k]
-                num3 = Array[k]
-                sum= num1 + num2 + num3
+                number3 = Array[k]
+                sum= number1 + number2 + number3
 
                 # checking if the sum is equal to zero
                 if ( sum == 0 ):
